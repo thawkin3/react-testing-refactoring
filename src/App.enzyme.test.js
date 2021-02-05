@@ -19,7 +19,7 @@ describe('App', () => {
   it('updates the output message in the UI when the count state is changed', () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find('#output').text()).toEqual('You clicked 0 times');
-    wrapper.setState({ count: 1 });
+    wrapper.setState({ counterValue: 1 });
     expect(wrapper.find('#output').text()).toEqual('You clicked 1 times');
   });
 
