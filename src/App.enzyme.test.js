@@ -12,7 +12,7 @@ describe('App', () => {
   it('increments the counter when the handleClick method is called', () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find('#output').text()).toEqual('You clicked 0 times');
-    wrapper.instance().handleClick();
+    wrapper.instance().incrementCounter();
     expect(wrapper.find('#output').text()).toEqual('You clicked 1 times');
   });
 

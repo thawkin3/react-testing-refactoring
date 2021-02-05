@@ -6,7 +6,7 @@ class App extends Component {
     counterValue: 0,
   }
 
-  handleClick = () => {
+  incrementCounter = () => {
     this.setState(prevState => ({ counterValue: prevState.counterValue + 1 }))
   }
 
@@ -18,7 +18,7 @@ class App extends Component {
         <p>We'll also look at how easy or difficult refactoring is with each test library.</p>
         <br />
         <p id="output">You clicked {this.state.counterValue} times</p>
-        <button onClick={this.handleClick}>
+        <button onClick={this.incrementCounter}>
           Click me
         </button>
       </main>
