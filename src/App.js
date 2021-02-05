@@ -17,7 +17,7 @@ class App extends Component {
         <p>We'll use a simple counter component to see how easy it is to test our code using React Testing Library and Enzyme.</p>
         <p>We'll also look at how easy or difficult refactoring is with each test library.</p>
         <br />
-        <p id="output">You clicked {this.state.counterValue} times</p>
+        <p id="clickCountMessage">You clicked {this.state.counterValue} times</p>
         <button onClick={this.incrementCounter}>
           Click me
         </button>
